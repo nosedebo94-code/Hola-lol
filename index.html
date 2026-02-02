@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SistemaPCXD - No Key</title>
+    <style>
+        body { background-color: #0f0f0f; color: white; font-family: sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+        .card { background: #1a1a1a; width: 90%; max-width: 380px; padding: 25px; border-radius: 15px; border: 2px solid #8200ff; text-align: center; }
+        h1 { color: #8200ff; font-size: 22px; }
+        .instrucciones { text-align: left; background: #222; padding: 15px; border-radius: 10px; font-size: 14px; margin: 15px 0; border-left: 4px solid #8200ff; }
+        .btn { display: block; width: 100%; padding: 12px; margin: 10px 0; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; text-decoration: none; color: white; transition: 0.3s; }
+        .yt { background: #ff0000; }
+        .rbx { background: #0056d2; }
+        .upload { background: transparent; border: 2px dashed #555; color: #aaa; }
+        #final-box { display: none; margin-top: 20px; padding: 15px; background: #000; border: 1px solid #00ff00; border-radius: 8px; }
+        code { color: #00ff00; font-size: 12px; word-break: break-all; display: block; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>SISTEMA PC XD</h1>
+    
+    <div class="instrucciones">
+        Osea la pagina para obtener el no key y pon unos requisitos que muestres una foto donde estas suscrito al canal y que hayas dejado like a este video.
+        <br><br>
+        <b>Tienes que bajar y hacer 2 requisitos:</b><br>
+        1. Seguirme en Roblox.<br>
+        2. <b>mi user:debo01671</b>
+    </div>
+
+    <a href="https://youtu.be/nSuotokO2YM?si=v34q5iBfYoiuFW_i" target="_blank" class="btn yt">IR AL VIDEO (LIKE/SUB)</a>
+    <a href="https://www.roblox.com/users/3358913931/profile" target="_blank" class="btn rbx">SEGUIR EN ROBLOX</a>
+
+    <div class="btn upload" onclick="document.getElementById('file').click()">SUBIR FOTO DE PRUEBA</div>
+    <input type="file" id="file" style="display:none" onchange="mostrarScript()">
+
+    <div id="final-box">
+        <p style="color: #00ff00; margin-top: 0;">¡REQUISITOS COMPLETADOS!</p>
+        <code id="scriptText">loadstring(game:HttpGet("https://pastebin.com/raw/t5VsJxau"))()</code>
+        <button onclick="copiarScript()" class="btn" style="background: #00b400;">COPIAR SCRIPT</button>
+    </div>
+</div>
+
+<script>
+    function mostrarScript() {
+        document.getElementById('final-box').style.display = 'block';
+        alert("Foto mostrada correctamente. ¡Ya puedes copiar!");
+    }
+
+    function copiarScript() {
+        const texto = document.querySelector('#scriptText').innerText;
+        navigator.clipboard.writeText(texto);
+        alert("¡Copiado al portapapeles!");
+    }
+</script>
+
+</body>
+</html>
